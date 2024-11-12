@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furniture selling website</title>
+  <link rel="icon" type="png/image"
+    href="https://www.bing.com/th?id=OIP.z2DoWUr6NOP-vbV2jtKBrgHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!--fontawsome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    body {
+      font-family: "Quicksand", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    header {
+      top: 0;
+      position: sticky;
+      z-index: 1;
+    }
+
+    h1 {
+      font-family: "Grey Qo", cursive;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    h2 {
+      font-family: "Grey Qo", cursive;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    .cardc {
+      border: 0;
+    }
+
+    h5 {
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .footer-mid {
+      background-color: rgba(195, 195, 195, 0.841);
+    }
+    .footer-mid a{
+      text-decoration: none;
+      color: rgb(107, 97, 97);
+      margin-top: 10px;
+      font-size: small;
+    }
+
+    .footer-mid .row .col div{
+      margin-top: 10px;
+    }
+
+    .footer-new{
+     height: 100px;
+     margin-top: 20px;
+    }
+    .footer-new div{
+     display: flex;
+     width: 200px;
+     height: 40px;
+     margin-left: 20px;
+    }
+    .footer-new img{
+      width: 100px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Including Search bar-->
+  <section>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid" style="height: 90px;">
+        <img src="https://th.bing.com/th/id/OIP.fH9W5aMkEnOYfcn4azEQswHaHa?w=177&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+
+        <form class="d-flex w-50" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search products,colors & more... "
+            aria-label="Search">
+          <button class="border-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <button class="border-0">
+          <div class="d-flex flex-sm-column text-center mt-3">
+            <i class="fa-solid fa-store mx-2 fs-5"></i>
+            <p>Store</p>
+          </div>
+        </button>
+        <button class="border-0">
+          <div class="d-flex flex-sm-column text-center mt-3">
+            <i class="fa-solid fa-user mx-2 fs-5"></i>
+            <p>Profile</p>
+          </div>
+        </button>
+        <button class="border-0">
+          <div class="d-flex flex-sm-column text-center mt-3">
+            <i class="fa-solid fa-heart mx-2 fs-5"></i>
+            <p>Wishlist</p>
+          </div>
+        </button>
+        <button class="border-0">
+          <div class="d-flex flex-sm-column text-center mt-3">
+            <i class="fa-solid fa-cart-shopping mx-2 fs-5"></i>
+            <p>Cart</p>
+          </div>
+        </button>
+      </div>
+    </nav>
+  </section>
+  <!--Header-->
+  <header>
+    <section>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Sofas</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Living</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Bedroom</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Dining & Kitchen</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Storage</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Study & Office</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Mattresses</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Decor</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Lamps & Lighting</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Furnishings</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Outdoor</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">WS Value</a>
+              </li>
+
+            </ul>
+          </div>
+
+      </nav>
+    </section>
+  </header>
+  <!--carousal-->
+  <section>
+    <div class="row">
+      <div class="col">
+        <div id="carouselExample" class="carousel slide w-50% mx-3">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.woodenstreet.com/images/home-new1/Mobile-Banner.jpg?v=302" class="d-block w-100"
+                height="580px" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://www.woodenstreet.com/images/furniture-new/woodensofa.jpg" class="d-block w-100"
+                height="580px" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://static.vecteezy.com/system/resources/thumbnails/012/166/949/original/interior-design-concept-sale-of-home-decorations-and-furniture-during-promotions-and-discounts-it-is-surrounded-by-beds-sofas-armchairs-and-advertising-spaces-banner-pastel-background-3d-render-video.jpg"
+                class="d-block w-100" height="580px" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!--carousal2-->
+      <div class="col p-0">
+        <div class="row">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner w-50%">
+              <div class="carousel-item active">
+                <img src="https://www.woodenstreet.com/images/solidwoodfurniture/banner1.jpg" class="d-block w-100"
+                  style="height: 290px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.woodenstreet.com/images/furniture-new/decor-furniture-m.jpg" class="d-block w-100"
+                  style="height: 290px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.woodenstreet.com/images/home-new1/sofa-sets-mobile.jpg" class="d-block w-100"
+                  style="height: 290px;" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner w-50%">
+              <div class="carousel-item active">
+                <img
+                  src="https://i.ytimg.com/vi/1jeJNRgIAoE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA5yRxJEa3jU_HrAwIkLoJD2A1m0w"
+                  class="d-block w-100" style="height: 290px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://d168jcr2cillca.cloudfront.net/uploadimages/coupons/10192-Wooden-Street-Offers-Coupons-1.jpg"
+                  class="d-block w-100" style="height: 290px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.woodenstreet.com/images/store-new/store-strip.jpg?v=4" class="d-block w-100"
+                  style="height: 290px;" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--rounded image-->
+  <section>
+    <h2 class="text-center mt-5">Top Picks For You</h2>
+    <p class="text-center">Impressive Collection For Your Dream Home</p>
+    <div class="row mt-3 mx-5 text-center">
+      <div class="col-2">
+        <img src="https://i.pinimg.com/736x/63/bf/0f/63bf0f5195646e5cd8ada16875de4b4b.jpg" alt="" width="200px"
+          height="200px" class="rounded-circle">
+        <p>Sofa Sets</p>
+      </div>
+      <div class="col-2">
+        <img src="https://i.pinimg.com/originals/ed/8a/8f/ed8a8f510b0929d16f8959e3f5d10e68.png" alt="" width="200px"
+          height="200px" class="rounded-circle">
+        <p>Beds</p>
+      </div>
+      <div class="col-2">
+        <img src="https://m.media-amazon.com/images/I/81RwWlzMs2L._AC_UF894,1000_QL80_.jpg" width="200px" height="200px"
+          class="rounded-circle" alt="">
+        <p>Dining Table Sets</p>
+      </div>
+      <div class="col-2">
+        <img src="https://www.nismaayadecor.in/cdn/shop/files/nismaaya-naia-sofa-cum-bed_3.png?v=1691743437&width=1080"
+          height="200px" class="rounded-circle" alt="">
+        <p>Sofa Cum Beds</p>
+      </div>
+      <div class="col-2">
+        <img src="https://www.shutterstock.com/image-illustration/tv-room-warm-tones-style-260nw-2198683011.jpg"
+          width="200px" height="200px" class="rounded-circle" alt="">
+        <p>TV Units</p>
+      </div>
+      <div class="col-2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJO2fGYsKrPqWQTLlCRtqc4njr-zzktFeHZg&s"
+          width="200px" height="200px" class="rounded-circle" alt="">
+        <p>Book Shelve</p>
+      </div>
+    </div>
+    <!--rounded image2-->
+    <div class="row mt-3 mx-5 text-center">
+      <div class="col-2">
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/256/490/390/room-living-room-furniture-comfort-wallpaper-preview.jpg"
+          alt="" width="200px" height="200px" class="rounded-circle">
+        <p>Coffee Tables</p>
+      </div>
+      <div class="col-2">
+        <img src="https://c0.wallpaperflare.com/preview/523/255/609/table-furniture-chair-inside.jpg" alt=""
+          width="200px" height="200px" class="rounded-circle">
+        <p>Study Tables</p>
+      </div>
+      <div class="col-2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmVDxlJhx4keLU98l5cImxL97Zs42GRJDVqg&s"
+          width="200px" height="200px" class="rounded-circle" alt="">
+        <p>Home Decor</p>
+      </div>
+      <div class="col-2">
+        <img src="https://m.media-amazon.com/images/I/61ClghNjirL._AC_UF894,1000_QL80_.jpg" width="200px" height="200px"
+          class="rounded-circle" alt="">
+        <p>Home Furnishing</p>
+      </div>
+      <div class="col-2">
+        <img src="https://w0.peakpx.com/wallpaper/17/302/HD-wallpaper-lamp-bulb-lighting-room-electricity.jpg"
+          width="200px" height="200px" class="rounded-circle" alt="">
+        <p>Lamps & Lightings</p>
+      </div>
+      <div class="col-2">
+        <img src="https://wallpapers.com/images/featured/sales-758f61svbv17elgb.jpg" width="200px" height="200px"
+          class="rounded-circle" alt="">
+        <p>Sale</p>
+      </div>
+    </div>
+  </section>
+  <!--cards-->
+  <section>
+    <h2 class="mx-4 mt-5">Explore Essential Home Furniture</h2>
+    <p class="mx-4">Design Your Home Decor, Your Way</p>
+    <div class="row mx-4 mb-5">
+      <div class="col-3">
+        <div class="cardc" style="width: 20rem;">
+          <img src="https://img6.arthub.ai/64c332a1-111f.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Sofa Sets</h4>
+            <p class="card-text">From Rs 20,199</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="cardc" style="width: 20rem;">
+          <img
+            src="https://media.glamourmagazine.co.uk/photos/66507e6a0206cb84a9a05278/master/w_320%2Cc_limit/HANGING%2520EGG%2520CHAIRS%2520200524%2520Screenshot%25202024-05-24%2520at%252012.47.00%2520copy.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Seating & Chairs</h4>
+            <p class="card-text">From Rs 1,849</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="cardc" style="width: 20rem;">
+          <img src="https://www.godrejinterio.com/imagestore/B2C/TABCHR007/TABCHR007_A2_500x500.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">6 Seater Dining Table Sets</h4>
+            <p class="card-text">From Rs 32,989</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="cardc" style="width: 30rem;">
+          <img src="https://c0.wallpaperflare.com/preview/41/375/801/three-round-glass-pendant-lights.jpg"
+            class="card-img-top" style="width: 350px; height: 320px;" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Lamps & Lightings</h4>
+            <p class="card-text">From Rs 1,883</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--cards2-->
+    <div class="row mt-3 mx-4">
+      <div class="col-3">
+        <div class="cardc" style="width: 22rem;">
+          <img
+            src="https://img.lovepik.com/free-png/20211124/lovepik-nordic-japanese-home-dressing-table-png-image_401115713_wh1200.png"
+            class="card-img-top" style="width: 350px; height: 320px;" alt="...">
+          <div class="card-body">
+            <h4 class="card-title mt-3">Dressing Table</h4>
+            <p class="card-text">From Rs 2,799</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="cardc" style="width: 20rem;">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71pesYxHUyL.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Tv Units</h4>
+            <p class="card-text">From Rs 1,499</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="cardc" style="width: 20rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcqaNbai0pPH08StMz3InIAUQtd9BLfyz2uA&s"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Wardrobes</h4>
+            <p class="card-text">From Rs 9,989</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="cardc" style="width: 20rem;">
+          <img src="https://5.imimg.com/data5/GS/NP/YT/SELLER-48192845/embossed-wallpaper-500x500.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Home Decors</h4>
+            <p class="card-text">From Rs 199</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--cards3-->
+  <section>
+    <h2 class="mx-4 mt-5" style="text-align: center;">95+ Experience Stores Across India</h2>
+    <p class="mx-4" style="text-align: center;">Get UPTO 10% OFF* on orders placed at your nearest stores</p>
+    <div class="row mb-4 mx-4">
+      <div class="col">
+        <div class="card bg-dark text-white" style="height: 250px; width: 280px;">
+          <img src="https://images.woodenstreet.de/image/data/store%20page/new/exterior%20im/kochi.jpg" class="card-img"
+            style="height: 100%;" alt="...">
+          <div class="card-img-overlay text-center" style="margin-top: 160px;">
+            <h5 class="card-title">Bangalore</h5>
+            <p>18 Stores</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white" style="height: 250px; width: 280px;">
+          <img src="https://images.woodenstreet.de/image/data/store%20page/new/padle%20gaon/aarohi.jpg" class="card-img"
+            style="height: 100%;" alt="...">
+          <div class="card-img-overlay text-center" style="margin-top: 160px;">
+            <h5 class="card-title">Mumbai</h5>
+            <p>11 Stores</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white" style="height: 250px; width: 280px;">
+          <img src="https://images.woodenstreet.de/image/data/store%20page/new/exterior%20im/lucknow.jpg"
+            class="card-img" style="height: 100%;" alt="...">
+          <div class="card-img-overlay text-center" style="margin-top: 160px;">
+            <h5 class="card-title">Hyderabad</h5>
+            <p>10 Stores</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white" style="height: 250px; width: 280px;">
+          <img src="https://www.woodenstreet.com/images/home-new1/wooden-sofa-banner.jpg" class="card-img"
+            style="height: 100%;" alt="...">
+          <div class="card-img-overlay text-center" style="margin-top: 160px;">
+            <h5 class="card-title">Chennai</h5>
+            <p>7 Stores</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col">
+      <div class="card bg-dark text-white" style="height: 250px; width: 280px;">
+        <img src="https://images.woodenstreet.de/image/data/store%20page/new/juhu/JUHU.jpg" class="card-img"
+          style="height: 100%;" alt="...">
+        <div class="card-img-overlay text-center" style="margin-top: 160px;">
+          <h5 class="card-title">Pune</h5>
+          <p>7 Stores</p>
+        </div>
+      </div>
+    </div> -->
+    </div>
+    <div class="row  mb-4 mx-4">
+      <div class="col">
+        <div class="card bg-dark text-white" style="height: 250px; width: 280px;">
+          <img
+            src="https://images.woodenstreet.de/image/data/store%20page/new/exterior%20im/new/stores-2023/Bhubneshwar.jpg"
+            class="card-img" style="height: 100%;" alt="...">
+          <div class="card-img-overlay text-center" style="margin-top: 160px;">
+            <h5 class="card-title">Delhi</h5>
+            <p>4 Stores</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white" style="height: 250px; width: 280px;">
+          <img src="https://images.woodenstreet.de/image/data/store%20page/new/ecr/new/ecr3.jpg" class="card-img"
+            style="height: 100%;" alt="...">
+          <div class="card-img-overlay text-center" style="margin-top: 160px;">
+            <h5 class="card-title">Jaipur</h5>
+            <p>6 Stores</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white" style="height: 250px; width: 280px;">
+          <img src="https://images.woodenstreet.de/image/data/store%20page/new/banjarahills2/banjarahills2.jpg"
+            class="card-img" style="height: 100%;" alt="...">
+          <div class="card-img-overlay text-center" style="margin-top: 160px;">
+            <h5 class="card-title">Gurgaon</h5>
+            <p>3 Stores</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white" style="height: 250px; width: 280px;">
+          <img src="https://www.woodenstreet.com/images/store-new/service-4.jpg" class="card-img" style="height: 100%;"
+            alt="...">
+          <div class="card-img-overlay text-center" style="margin-top: 160px;">
+            <h5 class="card-title">Kolkata</h5>
+            <p>4 Stores</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col">
+      <div class="card bg-dark text-white" style="height: 250px; width: 280px;">
+        <img
+          src="https://storage.googleapis.com/realtyplusmag-news-photo/news-photo/109322.Wooden-Street-Launched-8th-Experience-Store-in-Mumbai.jpeg"
+          class="card-img" style="height: 100%;" alt="...">
+        <div class="card-img-overlay text-center" style="margin-top: 160px;">
+          <h5 class="card-title">Ahmedabad</h5>
+          <p>2 Stores</p>
+        </div>
+      </div>
+    </div> -->
+      <button type="button" class="btn mt-5"
+        style="background-color: rgb(255, 116, 2); color: white; margin-left: 660px; width: 16%;">
+        <h4 style="text-align: center;">Explore All Stores</h4>
+      </button>
+    </div>
+  </section>
+  <!--customer review-->
+  <section>
+    <h2 style="text-align: center; margin-top: 5;">Their Words,Our Pride</h2>
+    <p style="text-align: center;">Happy Words of our Happy Customers </p>
+    <div class="container">
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 25rem; height: 600px;">
+                  <img
+                    src="https://images.unsplash.com/photo-1680503397107-475907e4f3e3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlJTIwc3RvcmV8ZW58MHx8MHx8fDA%3D"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="#" class="btn btn-success mb-1">View Product Details</a>
+                    <p class="card-text">
+                      My father-in-law sent me the link to this website. And he suggested I purchase the Marriott sofa
+                      set.Its design and quality are the greatest of
+                      all
+                      the other sofa sets I explored in the market. Also, I will suggest everyone buy this sofa set
+                      design today.</p>
+                    <div class="div text-center mt-2">
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <h5 class="card-title mt-2">PAPIYA BOSE</h5>
+                      <h6>Noida</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 25rem; height: 600px;">
+                  <img
+                    src="https://img.freepik.com/free-photo/side-view-cup-coffee-small-round-table-horizontal_176474-2487.jpg"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="#" class="btn btn-success mb-1">View Product Details</a>
+                    <p class="card-text">
+                      The coffee table design is perfect for the living room. Whether it's the design, comfort, or the
+                      shopping experience, it ticks all the boxes for us.</p>
+                    <div class="div text-center mt-5">
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <h5 class="card-title mt-2">Ashik Usman</h5>
+                      <h6>Pandalam</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 25rem; height: 600px;">
+                  <img
+                    src="https://c4.wallpaperflare.com/wallpaper/582/443/760/white-design-room-sofa-wallpaper-preview.jpg"
+                    class="card-img-top" style="height: 260px;" alt="...">
+                  <div class="card-body">
+                    <a href="#" class="btn btn-success mb-1">View Product Details</a>
+                    <p class="card-text">
+                      The product is value for money and has good after-sales service, easy to assemble, and good
+                      capacity for
+                      shoe storage.</p>
+                    <div class="div text-center mt-5">
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <h5 class="card-title mt-2">Benzema</h5>
+                      <h6>France</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 25rem; height: 600px;">
+                  <img
+                    src="https://www.venicasa.com/pub/media/mageplaza/blog/post/l/u/luxuryfurnitureinc-100243-european-american-furniture-blogbanner1.jpg"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="#" class="btn btn-success mb-1">View Product Details</a>
+                    <p class="card-text">
+                      Value for money, excellent quality, and looks.
+                      Sturdy hardwood material with good finishing.
+                      I will suggest everyone buy this furniture today.</p>
+                    <div class="div text-center mt-5">
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <h5 class="card-title mt-2">Virat Kholi</h5>
+                      <h6>Kolkata</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 25rem; height: 200px;">
+                  <img
+                    src="https://static.wixstatic.com/media/ad26b2_d5271b92e6c04e829254de1649ed6f0c~mv2.jpg/v1/crop/x_0,y_513,w_1229,h_1282/fill/w_560,h_584,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Haleigh%20Living%20Room%204K%20-4.jpg"
+                    class="card-img-top" style="height: 260px;" alt="...">
+                  <div class="card-body">
+                    <a href="#" class="btn btn-success mb-1">View Product Details</a>
+                    <p class="card-text">
+                      The product is similar to what is shown on the website. It was delivered on time and the packaging
+                      was
+                      done well.</p>
+                    <div class="div text-center mt-5">
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <h5 class="card-title mt-2">Pedri</h5>
+                      <h6>Spain</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 25rem; height: 200px;">
+                  <img
+                    src="https://images.pexels.com/photos/238377/pexels-photo-238377.jpeg?cs=srgb&dl=pexels-marianne-67058-238377.jpg&fm=jpg"
+                    class="card-img-top" style="height: 260px;" alt="...">
+                  <div class="card-body">
+                    <a href="#" class="btn btn-success mb-1">View Product Details</a>
+                    <p class="card-text">
+                      Highly Appreciable table. Made of Pure Teak Wood. I am very much satisfied with the purchase.I
+                      will suggest everyone buy this furniture today.</p>
+                    <div class="div text-center mt-5">
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <i class="fa-solid fa-star" style="color: rgb(255, 145, 0);"></i>
+                      <h5 class="card-title mt-2">Sumesh P P</h5>
+                      <h6>Kochi</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <div class="footer-new footer-html border shadow">
+    <div class="">
+      <div class="mt-2">
+        <div class="mx-5">
+          <img src="https://www.indusnovateur.com/wp-content/uploads/2022/06/retail-industry.png" alt=""><h4>100+</h4><br><p>Experience Stores Across India</p>
+        </div>
+        <div class="mx-5">
+          <img src="https://icones.pro/wp-content/uploads/2021/11/icone-jaune-de-camion-d-expedition-et-de-livraison.png" alt=""><h4>350+</h4><br><p>Delivery Centers
+          Across India</p>
+        </div>
+        <div class="mx-5">
+          <img class="rounded-circle" src="https://st2.depositphotos.com/5266903/9617/v/950/depositphotos_96173202-stock-illustration-customer-flat-icon.jpg" alt=""><h4>10 Lakh +</h4><br><p>Satisfied
+          Customers</p>
+        </div>
+        <div class="mx-5">
+          <img class="rounded-circle" src="https://w7.pngwing.com/pngs/444/839/png-transparent-computer-icons-guarantee-garanty-label-logo-quality.png" alt=""><h4>36 Months*</h4><br><p>Guarantee</p>
+        </div>
+        <div class="mx-5">
+          <img class="rounded-circle" src="https://kingcaviars.com/caviar-in-saudi-arabia/wp-content/uploads/2022/03/best-quality-king-caviars.png" alt=""><h4>Warranty</h4>
+        </div>
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  <section class="footer-mid d-flex">
+    <div class="container-1200" data-gtm-vis-has-fired9560732_740="1">
+      <div class="row m-5">
+        <div class="col mx-5 flex">
+          <div class="mb-4">OUR COMPANY</div>
+          <div><a href=" ">About Us</a></div>
+          <div><a href=" ">Career</a></div>
+          <div><a href=" ">Media</a></div>
+          <div><a href="https://www.woodenstreet.com/blog/">Blog</a></div>
+          <div><a href=" ">Customer Stories</a></div>
+          <div><a href=" ">Our Stores</a></div>
+        </div>
+        <div class="col flex">
+          <div class="mb-4">USEFUL LINKS</div>
+          <div><a href=" ">Custom Furniture</a></div>
+          <div><a href=" ">Exporters</a></div>
+          <div><a href=" ">Buy in Bulk</a></div>
+          <div><a href=" ">Hotel Furniture</a></div>
+          <div><a href=" ">Delivery Location</a></div>
+          <div><a href=" ">Sitemap</a></div>
+        </div>
+        <div class="col flex">
+          <div class="mb-4">SHOP BY ROOM</div>
+          <div><a href=" ">Living Room</a></div>
+          <div><a href=" ">Bedroom</a></div>
+          <div><a href=" ">Dining Room</a></div>
+          <div><a href=" ">Kids Room</a></div>
+          <div><a href=" ">Modular Furniture</a></div>
+          <div><a href=" ">Modular Kitchen</a></div>
+          <div><a href=" ">Modular Wardrobe</a></div>
+        </div>
+        <div class="col">
+          <div class="mb-4">PARTNERS</div>
+          <div><a href=" ">Become a Franchise</a></div>
+          <div><a href=" ">Sell on WoodenStreet</a></div>
+          <div><a href=" ">Design Partner</a></div>
+
+          <div class="mb-4 mt-4">TRUSTED BY</div>
+          <div><a href="">QRO Certified</a></div>
+          <div><a href="">Ukcert Certified</a></div>
+        </div>
+        <div class="col">
+          
+          <div class="row mt-0">
+            <div class="mb-4">NEED HELP</div>
+            <div><a href="">Help Center</a></div>
+            <div><a href="">Contact Us</a></div>
+            <div><a href="">Ask Experts</a></div>
+            <div><a href="">Track your order</a></div>
+          </div>
+          <div class="row">
+            <a href=""><img class="w-75" src="https://cdn.pixabay.com/photo/2021/02/08/15/44/social-media-5995266_1280.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+  </section> 
+</body>
+
+</html>
